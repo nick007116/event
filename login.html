@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="loginstyle.css">
+
+    </head>
+    <body>
+        <h1 style="text-align: center;">Form for login</h1>
+        <div class="leftside">
+        <label id="leftanime">Animation of hello world</label>
+    </div>
+        <div class="login" id="loginnform">       
+       
+            <form action="http://localhost/projects/login.php" method="POST">
+        <h1>login form</h1>
+        <ul class="list_type">
+            <li>
+                <label>
+                    Enter your name:
+                </label>
+                <input type="text" name="name"><br><br>
+            </li>
+            <li>
+                <label>
+                    Enter your mobile number:
+                </label>
+                <input type="text" maxlength="10" name="mobile_no"><br><br>
+            </li>
+            <li>
+                <label>
+                    Enter your gender:
+                </label>
+                <input type="text" id='male ' name="gender">
+            </li><br>
+            <li>
+                <label>
+                    date of birth:
+                </label>
+                <input type="text" placeholder="yyyy-mm-dd" name="dob">
+            </li>
+         
+        </ul>
+        <button type="submit" onclick="f1()">Submit</button>
+
+    </form>
+
+    </div>
+   
+       
+    <script>
+        function f1(){
+            alert("hello");
+     
+    }
+        </script>
+    </body>
+</html>
